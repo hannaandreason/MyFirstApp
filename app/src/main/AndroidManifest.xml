@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hannaandreason.myfirstapp">
 
+    <!-- Added from http://www.techrepublic.com/article/pro-tip-create-your-own-magnetic-compass-using-androids-internal-sensors/ -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +20,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Accelerometer" />
+        <!--
+        android:label="@string/title_activity_main2"
+        android:theme="@style/AppTheme.NoActionBar"
+        -->
+
+
+        <!--
+        <activity
+        android:name=".Compass"
+        android:label="@string/title_activity_compass"
+        android:theme="@style/AppTheme.NoActionBar">
+            </activity>
+        -->
+        <activity android:name=".Compass"></activity>
     </application>
 
 </manifest>
